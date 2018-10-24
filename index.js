@@ -1,6 +1,6 @@
-var http = require('http')
+var http = require('http');
 
 http.createServer(function (request, respone){
-    response.writeHead(200, {"Content-Type": "text/plain"})
-    response.end("Hello World\n")
-}).listen(process.env.PORT)
+    response.writeHead(200, {"Content-Type": "text/html"});
+    response.end("Hello World\n");
+}).listen(process.env.PORT);
