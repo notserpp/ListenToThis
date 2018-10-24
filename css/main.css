@@ -2022,7 +2022,7 @@ nav a:hover {
 }
 
 .banner-area {
-  background: url(../img/banner-bg.jpg) no-repeat center center/cover;
+  background: url(../img/festival.jpg) no-repeat center center/cover;
 }
 
 @media (max-width: 767px) {
@@ -2039,7 +2039,7 @@ nav a:hover {
 
 .banner-content h1 {
   color: #fff;
-  font-size: 124px;
+  font-size: 80px;
   letter-spacing: 3px;
   font-weight: 700;
   line-height: 1.15em;
