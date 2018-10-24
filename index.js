@@ -1,10 +1,10 @@
-var http = require('http');
-var fs = require('fs');
+var express = require('express');
+var app = express();
+var path = require('path');
 
-
-http.createServer(function (request, response) {
-    response.sendFile(path.join(__dirname, '/public', 'index.html'));
-    response.writeHead(200, {'Content-Type': 'text/plain'});
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
 }).listen(process.env.PORT);
 
 
