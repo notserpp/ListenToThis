@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData start
+20 silly mapToRegistry name start
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/start
+24 verbose request uri https://registry.npmjs.org/start
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 4:22:06 PM
+27 verbose request id 2e8964287b0da0d7
+28 verbose etag W/"9cc263e9e419961995060b4dbff1e7ef"
+29 verbose lastModified Sun, 27 May 2018 18:11:35 GMT
+30 http request GET https://registry.npmjs.org/start
+31 http 304 https://registry.npmjs.org/start
+32 verbose headers { date: 'Wed, 24 Oct 2018 23:22:07 GMT',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'set-cookie':
+32 verbose headers    [ '__cfduid=da9794571d15cb34e5b37d797ee43a1211540423327; expires=Thu, 24-Oct-19 23:22:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+32 verbose headers   'cf-cache-status': 'HIT',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'cf-ray': '46f02f027fb16bec-SJC',
+32 verbose headers   etag: '"9cc263e9e419961995060b4dbff1e7ef"',
+32 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+32 verbose headers   'last-modified': 'Sun, 27 May 2018 18:11:35 GMT',
+32 verbose headers   vary: 'accept-encoding, accept',
+32 verbose headers   server: 'cloudflare' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Wed, 24 Oct 2018 23:22:07 GMT',
+33 silly get     connection: 'keep-alive',
+33 silly get     'set-cookie':
+33 silly get      [ '__cfduid=da9794571d15cb34e5b37d797ee43a1211540423327; expires=Thu, 24-Oct-19 23:22:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+33 silly get     'cf-cache-status': 'HIT',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     'cf-ray': '46f02f027fb16bec-SJC',
+33 silly get     etag: '"9cc263e9e419961995060b4dbff1e7ef"',
+33 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 silly get     'last-modified': 'Sun, 27 May 2018 18:11:35 GMT',
+33 silly get     vary: 'accept-encoding, accept',
+33 silly get     server: 'cloudflare' } ]
+34 verbose etag https://registry.npmjs.org/start from cache
+35 verbose get saving start to /home/preston/.npm/registry.npmjs.org/start/.cache.json
+36 silly fetchPackageMetaData Error: No compatible version found: start@node index.js
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 5.1.0, 5.0.0, 4.0.2, 4.0.1, 4.0.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.0, 3.0.2, 3.0.1, 3.0.0, 2.0.0, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 0.0.2
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+36 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+36 silly fetchPackageMetaData  error for start@node index.js Error: No compatible version found: start@node index.js
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 5.1.0, 5.0.0, 4.0.2, 4.0.1, 4.0.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.0, 3.0.2, 3.0.1, 3.0.0, 2.0.0, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 0.0.2
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+36 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Starting
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: No compatible version found: start@node index.js
+42 verbose stack Valid install targets:
+42 verbose stack 5.1.0, 5.0.0, 4.0.2, 4.0.1, 4.0.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.0, 3.0.2, 3.0.1, 3.0.0, 2.0.0, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 0.0.2
+42 verbose stack
+42 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+42 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+42 verbose stack     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+42 verbose stack     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+42 verbose stack     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+42 verbose stack     at FSReqWrap.oncomplete (fs.js:135:15)
+43 verbose cwd /home/preston/Documents/listen_to_this
+44 error Linux 4.15.0-38-generic
+45 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+46 error node v8.10.0
+47 error npm  v3.5.2
+48 error No compatible version found: start@node index.js
+48 error Valid install targets:
+48 error 5.1.0, 5.0.0, 4.0.2, 4.0.1, 4.0.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.0, 3.0.2, 3.0.1, 3.0.0, 2.0.0, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 0.0.2
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
