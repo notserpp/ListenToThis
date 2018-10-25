@@ -1,12 +1,5 @@
 var express = require('express'); // Express web server framework
-var request = require('request'); // "Request" library
-var cors = require('cors');
-var querystring = require('querystring');
-var cookieParser = require('cookie-parser');
 
-var client_id = 'cb28cd4f918c4951b2f9c29a707427f8'; // Your client id
-var client_secret = 'bd6802adc4f440fdba0dc8fe3fbb72ee'; // Your secret
-var redirect_uri = "http://localhost:8888/callback/"; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
