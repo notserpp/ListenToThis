@@ -14,8 +14,8 @@ var redirect_uri = "http://localhost:8888/callback/"; // Your redirect uri
 app.get('/', function(req, res) {
 
     res.sendFile(path.join(__dirname + '/public/index.html'));
-}).listen(8080);
-    //.listen(process.env.PORT);
+})//.listen(8080);
+    .listen(process.env.PORT);
 
 
 var generateRandomString = function(length) {
