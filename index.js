@@ -8,14 +8,14 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'cb28cd4f918c4951b2f9c29a707427f8'; // Your client id
 var client_secret = 'bd6802adc4f440fdba0dc8fe3fbb72ee'; // Your secret
-var redirect_uri = "http://localhost:8888/callback/"; // Your redirect uri
+var redirect_uri = "http://localhost:8080/callback/"; // Your redirect uri
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
 
     res.sendFile(path.join(__dirname + '/public/index.html'));
-})//.listen(8080);
-    .listen(process.env.PORT);
+}).listen(8080);
+  //  .listen(process.env.PORT);
 
 
 var generateRandomString = function(length) {
@@ -31,9 +31,9 @@ var generateRandomString = function(length) {
 var stateKey = 'spotify_auth_state';
 
 
-app.use(express.static(path.join(__dirname, 'public')));
-    //.use(cors())
-    //.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')))
+    .use(cors())
+    .use(cookieParser());
 
 
 app.get('/login', function(req, res) {
