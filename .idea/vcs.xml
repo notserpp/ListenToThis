@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/infinite-fortress-83559" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/listen2thiss" vcs="Git" />
   </component>
 </project>
