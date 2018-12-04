@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'cb28cd4f918c4951b2f9c29a707427f8'; // Your client id
 var client_secret = 'bd6802adc4f440fdba0dc8fe3fbb72ee'; // Your secret
-var redirect_uri = "http://localhost:8080/callback/"; // Your redirect uri
+var redirect_uri = "https://infinite-fortress-83559.herokuapp.com/callback/"; // Your redirect uri
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
